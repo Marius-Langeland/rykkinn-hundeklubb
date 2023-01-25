@@ -1,4 +1,7 @@
 body{
+    background-image: url("https://cdn.discordapp.com/attachments/1067564173778755714/1067936412982329354/Geezmo_2D_texture_line_art_topographic_map_f5241a84-8806-4871-90b1-aae4d69358f7.png");
+    background-size: 240px;
+    background-blend-mode: overlay;
     background-color: var(--theme-clr-1);
 }
 #root{
@@ -7,6 +10,7 @@ body{
 }
 
 h1{
+    text-shadow: 2px 5px 10px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -26,22 +30,36 @@ h1{
 }
 
 #dog-sideview{
-    height: 60vh;
+    height: calc(20vw + 300px);
+    transform: rotateY(180deg);
+    z-index: -1;
     align-self: flex-end;
-    background-image: radial-gradient(rgb(97, 129, 107), rgb(45, 79, 64), transparent 70%);
+    filter: drop-shadow(20px 25px 20px rgb(7, 12, 10))
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
 }
 
 #bridge{
     all:unset;
-    height: 30vh;
-    margin-top: calc(-30vh + 10vw);
+    width: 100%;
+    height: 20vw;
+    margin-top: calc(-4rem - 6vw);
 
-    path:nth-of-type(1){fill: var(--theme-clr-2)}
-    path:nth-of-type(2){stroke: var(--theme-clr-2)}
+    path:nth-of-type(1){fill: var(--theme-clr-3)}
+    path:nth-of-type(2){stroke: var(--theme-clr-3)}
+    filter: drop-shadow(0 0 1rem black);
+    z-index: -1;
 }
 
 #bridge+*{
-    background-color: var(--theme-clr-2);
+    background-color: var(--theme-clr-3);
     height: 100vh;
     margin-top: -1px;
+}
+
+@media screen and (min-width: 900px) {
+    
 }
