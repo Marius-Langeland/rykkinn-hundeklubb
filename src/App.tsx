@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import './theme.css';
+import Dog from "./images/Dog_Calm.png"
+import {ReactComponent as Bridge} from "./images/Untitled.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1><span>Rykkinn</span> <span>hunde-</span> <span>klubb</span></h1>
+      <img id='dog-sideview' src={Dog} alt="" />
+      <Bridge id='bridge'/>
+      <div id="follow"></div>
+    </>
   );
 }
 
