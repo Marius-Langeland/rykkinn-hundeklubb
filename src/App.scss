@@ -25,7 +25,7 @@ h1{
     padding: 0;
     line-height: 100%;
 
-    &>*:nth-child(1){color: rgb(79, 239, 156);}
+    &>*:nth-child(1){color: var(--theme-clr-2);}
     &>*:nth-child(2){font-size: 1.191em; margin-top: -.12em;}
     &>*:nth-child(3){font-size: 1.43em;}
 }
@@ -50,14 +50,13 @@ h1{
     height: 20vw;
     margin-top: calc(-4rem - 6vw);
 
-    path:nth-of-type(1){fill: var(--theme-clr-3)}
-    path:nth-of-type(2){stroke: var(--theme-clr-3)}
+    path:nth-of-type(1){fill: var(--theme-clr-2)}
     filter: drop-shadow(0 0 1rem black);
     z-index: -1;
 }
 
 #bridge+*{
-    background-color: var(--theme-clr-3);
+    background-color: var(--theme-clr-2);
     height: 100vh;
     margin-top: -1px;
 }
